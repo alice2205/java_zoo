@@ -1,4 +1,5 @@
 package animals.herbivore;
+import enclosure.EnclosureSize;
 import animals.interfaces.Run;
 import animals.interfaces.Swim;
 import animals.interfaces.Voice;
@@ -6,6 +7,7 @@ import animals.interfaces.Voice;
 public class Elephant extends Herbivore implements Run, Swim, Voice {
     public Elephant() {
         this.name = "Слон";
+        this.enclosureSize = EnclosureSize.HUGE;
     }
 
     @Override

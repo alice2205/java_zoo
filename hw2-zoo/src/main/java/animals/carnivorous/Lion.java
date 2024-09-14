@@ -1,4 +1,5 @@
 package animals.carnivorous;
+import enclosure.EnclosureSize;
 import animals.interfaces.Run;
 import animals.interfaces.Swim;
 import animals.interfaces.Voice;
@@ -6,6 +7,7 @@ import animals.interfaces.Voice;
 public class Lion extends Carnivorous implements Run, Swim, Voice {
     public Lion() {
         this.name = "Лев";
+        this.enclosureSize = EnclosureSize.LARGE;
     }
 
     @Override

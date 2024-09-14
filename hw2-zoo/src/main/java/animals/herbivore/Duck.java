@@ -1,4 +1,5 @@
 package animals.herbivore;
+import enclosure.EnclosureSize;
 import animals.interfaces.Fly;
 import animals.interfaces.Run;
 import animals.interfaces.Swim;
@@ -7,6 +8,7 @@ import animals.interfaces.Voice;
 public class Duck extends Herbivore implements Fly, Run, Swim, Voice {
     public Duck() {
         this.name = "Утка";
+        this.enclosureSize = EnclosureSize.MEDIUM;
     }
 
     @Override
